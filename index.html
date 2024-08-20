@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Embed Builder</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles.css">
+      <meta property="og:title" content="Embed Builder">
+      <meta name="title" content="Embed Builder">
+      <meta property="og:description" content="Make your own custom embeds to send to your friends!">
+      <meta name="description" content="Make your own custom embeds to send to your friends!">
+      <meta name="theme-color" content="#1c1c1c">
+      <meta property="og:url" content="https://ukrio.is-a.dev/embedbuilder">
+      <meta property="og:image" content="text">
+   </head>
+   <body>
+      <header>
+         <h1>Embed Builder</h1>
+      </header>
+      <main class="content">
+         <div class="content">
+            <form id="metaForm">
+               <div class="form-group"><label for="title">Title:</label><input type="text" id="title" name="title" placeholder="Enter your embed title"></div>
+               <div class="form-group"><label for="description">Description:</label><input type="text" id="description" name="description" placeholder="Enter your embed description"></div>
+               <div class="form-group"><label for="color">Embed Color:</label><input type="text" id="color" name="color" placeholder="Enter hex code color"></div>
+               <div class="form-group"><label for="url">URL:</label><input type="text" id="url" name="url" placeholder="Enter title redirect URL"></div>
+               <div class="form-group"><label for="image">Image URL:</label><input type="text" id="image" name="image" placeholder="Enter image URL"></div>
+               <div class="form-group">
+                  <label for="img-property">Image Size:</label>
+                  <select id="img-property" name="img-property">
+                     <option value="">Default</option>
+                     <option value="large">Large</option>
+                  </select>
+               </div>
+            </form>
+            <h2>Generated URL:</h2>
+            <textarea id="generatedURL" rows="3" cols="50" readonly="readonly"></textarea>
+            <button id="copyButton">Copy URL</button>
+            <p>Share this url on any social media (made for discord) and the embed should pop-up!</p>
+         </div>
+      </main>
+      <footer>
+         <p class="author">Created by <a href="https://ukrioo.github.io">ukrio</a></p>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>

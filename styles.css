@@ -1,0 +1,84 @@
+@font-face {
+   font-family: 'fixedsys_excelsior_3.01Rg';
+   src: url(media/font.woff2) format('woff2'), url(media/font.woff) format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+:root {
+   --font: 'fixedsys_excelsior_3.01Rg', monospace;
+   --primary-color: lavenderblush;
+   --background-color: #000;
+   --highlight-color: violet;
+   --link-color: violet;
+   --link-hover-color: lavenderblush;
+   --link-active-color: crimson;
+   --background-gif: url(media/bg.gif);
+}
+body,
+html {
+   margin: 0;
+   padding: 0;
+   background: var(--background-gif), var(--background-color);
+   background-attachment: fixed;
+   image-rendering: pixelated;
+   background-repeat: repeat;
+   background-clip: initial;
+}
+body,
+html,
+input,
+select,
+textarea,
+button {
+   color: var(--primary-color);
+   font-family: var(--font);
+}
+footer,
+header,
+main.content {
+   padding: 20px;
+   text-align: center;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   margin: 0;
+}
+main.content {
+   max-width: 800px;
+   margin: 20px auto;
+   background-color: rgba(0,0,0,0.5);
+}
+form {margin-bottom: 20px;}
+.form-group {margin-bottom: 15px;}
+label {
+   display: block;
+   margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   background-color: #fff0;
+   border: 1px solid var(--primary-color);
+   box-sizing: border-box;
+}
+textarea {resize: vertical;}
+button {
+   padding: 10px 20px;
+   color: var(--background-color);
+   background-color: var(--highlight-color);
+   border: none;
+   cursor: pointer;
+}
+button:hover {background-color: var(--link-hover-color);}
+a {
+   color: var(--link-color);
+   text-decoration: none;
+}
+a:hover {color: var(--link-hover-color);}
+a:active {color: var(--link-active-color);}
